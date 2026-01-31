@@ -1,5 +1,5 @@
 const StatusBar = () => {
-  return <div className="status-bar inline-flex items-center gap-8 rounded-full py-[5px] my-0 px-[32px]">
+  return <div className="status-bar inline-flex items-center gap-8 rounded-full my-0 px-[50px] py-0">
       <div className="text-center">
         <span className="text-primary-foreground/70 text-xs font-medium uppercase tracking-wider">Status:</span>
         <p className="text-primary-foreground font-semibold">Online</p>
