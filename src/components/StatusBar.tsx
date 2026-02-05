@@ -1,21 +1,24 @@
+import { Circle, Users, Clock } from 'lucide-react';
+
 const StatusBar = () => {
   return (
-    <div className="status-bar inline-flex flex-col sm:flex-row items-center gap-3 sm:gap-6 md:gap-8 rounded-2xl sm:rounded-full px-4 sm:px-6 py-3 sm:py-2">
-      <div className="text-center">
-        <span className="text-primary-foreground/70 text-[10px] sm:text-xs font-medium uppercase tracking-wider">Status:</span>
-        <p className="text-primary-foreground font-semibold text-sm sm:text-base">Online</p>
+    <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+      {/* Status Badge */}
+      <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/20 border border-primary/30 backdrop-blur-sm">
+        <Circle className="w-2 h-2 fill-primary text-primary animate-pulse" />
+        <span className="text-primary text-xs sm:text-sm font-medium">Online</span>
       </div>
-      <div className="hidden sm:block w-px h-8 bg-primary-foreground/20" />
-      <div className="w-16 h-px sm:hidden bg-primary-foreground/20" />
-      <div className="text-center">
-        <span className="text-primary-foreground/70 text-[10px] sm:text-xs font-medium uppercase tracking-wider">Last Update:</span>
-        <p className="text-primary-foreground font-semibold text-sm sm:text-base">Jan 29 2026</p>
+
+      {/* Last Update Badge */}
+      <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-accent/10 border border-accent/20 backdrop-blur-sm">
+        <Clock className="w-3 h-3 text-accent" />
+        <span className="text-foreground/80 text-xs sm:text-sm font-medium">Jan 29 2026</span>
       </div>
-      <div className="hidden sm:block w-px h-8 bg-primary-foreground/20" />
-      <div className="w-16 h-px sm:hidden bg-primary-foreground/20" />
-      <div className="text-center">
-        <span className="text-primary-foreground/70 text-[10px] sm:text-xs font-medium uppercase tracking-wider">Online Users:</span>
-        <p className="text-primary-foreground font-semibold text-sm sm:text-base">150</p>
+
+      {/* Users Badge */}
+      <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-accent/10 border border-accent/20 backdrop-blur-sm">
+        <Users className="w-3 h-3 text-accent" />
+        <span className="text-foreground/80 text-xs sm:text-sm font-medium">150 users</span>
       </div>
     </div>
   );
