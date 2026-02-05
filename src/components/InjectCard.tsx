@@ -42,8 +42,9 @@ const InjectCard = () => {
           <p className="text-muted-foreground text-sm md:text-base mb-8 max-w-sm">Click on the button below to begin your Install process.</p>
 
           {/* CTA Button */}
-          <button onClick={handleStartInjecting} disabled={isLoading} className="glow-button flex items-center gap-3 px-10 py-4 rounded-lg text-primary-foreground font-display font-bold text-lg uppercase tracking-wider disabled:opacity-50">START INSTALLING<Download className="w-5 h-5" />
-            {isLoading ? 'Loading...' : 'Start Injecting'}
+          <button onClick={handleStartInjecting} disabled={isLoading} className="glow-button flex items-center gap-3 px-10 py-4 rounded-lg text-primary-foreground font-display font-bold text-lg uppercase tracking-wider disabled:opacity-50">
+            {isLoading ? 'Loading...' : 'START INSTALLING'}
+            <Download className="w-5 h-5" />
           </button>
         </div>
       </div>
