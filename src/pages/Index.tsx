@@ -15,11 +15,11 @@ const Index = () => {
     }} />
 
       {/* Main Content */}
-      <div className="relative min-h-screen py-8 px-4 items-center justify-center flex flex-col" style={{
+      <div className="relative h-screen py-4 sm:py-8 px-2 sm:px-4 items-center justify-center flex flex-col overflow-hidden" style={{
       zIndex: 2
     }}>
         {/* Status Bar */}
-        <div className="mb-8">
+        <div className="mb-4 sm:mb-8">
           <StatusBar />
         </div>
 

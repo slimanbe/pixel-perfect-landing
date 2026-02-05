@@ -22,29 +22,29 @@ const InjectCard = () => {
     }
   };
   return <>
-      <div className="glass-card rounded-2xl p-8 md:p-12 max-w-lg w-full mx-4">
+      <div className="glass-card rounded-2xl p-4 sm:p-8 md:p-12 max-w-lg w-full mx-2 sm:mx-4">
         <div className="flex flex-col items-center text-center">
           {/* Pokeball */}
-          <div className="mb-6">
+          <div className="mb-3 sm:mb-6 scale-75 sm:scale-100">
             <Pokeball />
           </div>
 
           {/* Title Section */}
-          <h2 className="text-foreground text-lg font-display font-medium mb-2"> Size : 2.3 GB</h2>
+          <h2 className="text-foreground text-sm sm:text-lg font-display font-medium mb-1 sm:mb-2">Size: 2.3 GB</h2>
           
-          <h1 className="text-primary text-4xl md:text-5xl font-display font-bold glow-text mb-2">Jump Force </h1>
+          <h1 className="text-primary text-2xl sm:text-4xl md:text-5xl font-display font-bold glow-text mb-1 sm:mb-2">Jump Force</h1>
           
-          <p className="text-muted-foreground text-lg mb-4">
+          <p className="text-muted-foreground text-sm sm:text-lg mb-2 sm:mb-4">
             • Tweaked Edition •
           </p>
 
           {/* Description */}
-          <p className="text-muted-foreground text-sm md:text-base mb-8 max-w-sm">Click on the button below to begin your Install process.</p>
+          <p className="text-muted-foreground text-xs sm:text-sm md:text-base mb-4 sm:mb-8 max-w-sm">Click on the button below to begin your Install process.</p>
 
           {/* CTA Button */}
-          <button onClick={handleStartInjecting} disabled={isLoading} className="glow-button flex items-center gap-3 px-10 py-4 rounded-lg text-primary-foreground font-display font-bold text-lg uppercase tracking-wider disabled:opacity-50">
+          <button onClick={handleStartInjecting} disabled={isLoading} className="glow-button flex items-center gap-2 sm:gap-3 px-6 sm:px-10 py-3 sm:py-4 rounded-lg text-primary-foreground font-display font-bold text-sm sm:text-lg uppercase tracking-wider disabled:opacity-50">
             {isLoading ? 'Loading...' : 'START INSTALLING'}
-            <Download className="w-5 h-5" />
+            <Download className="w-4 h-4 sm:w-5 sm:h-5" />
           </button>
         </div>
       </div>
