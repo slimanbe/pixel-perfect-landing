@@ -1,31 +1,18 @@
 import NetworkBackground from '@/components/NetworkBackground';
-import StatusBar from '@/components/StatusBar';
 import InjectCard from '@/components/InjectCard';
+
 const Index = () => {
-  return <div className="min-h-screen bg-background relative overflow-hidden">
+  return (
+    <div className="min-h-screen bg-[radial-gradient(ellipse_at_center,_hsl(220_50%_8%)_0%,_hsl(220_50%_3%)_100%)] relative overflow-x-hidden flex items-center justify-center p-5">
       {/* Animated Network Background */}
       <NetworkBackground />
-      
-      {/* Gradient overlays for depth */}
-      <div className="fixed inset-0 bg-gradient-to-b from-background/50 via-transparent to-background/80 pointer-events-none" style={{
-      zIndex: 1
-    }} />
-      <div className="fixed inset-0 bg-gradient-to-r from-background/30 via-transparent to-background/30 pointer-events-none" style={{
-      zIndex: 1
-    }} />
 
       {/* Main Content */}
-      <div className="relative min-h-screen py-8 px-4 items-center justify-center flex flex-col" style={{
-      zIndex: 2
-    }}>
-        {/* Status Bar */}
-        <div className="mb-8">
-          <StatusBar />
-        </div>
-
-        {/* Main Card */}
+      <div className="relative z-10">
         <InjectCard />
       </div>
-    </div>;
+    </div>
+  );
 };
+
 export default Index;
