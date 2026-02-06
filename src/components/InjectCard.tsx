@@ -38,7 +38,7 @@ const InjectCard = () => {
             </h2>
 
             <h1 className="fade-up-2 text-primary text-4xl sm:text-[48px] font-display font-extrabold glow-text mt-2.5 mb-2 leading-tight tracking-tight max-[480px]:text-[38px]">
-              Pokemon Go
+              Jump Force
             </h1>
 
             <p className="fade-up-3 text-muted-foreground text-base font-medium tracking-[2px]">
